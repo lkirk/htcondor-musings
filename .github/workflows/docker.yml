@@ -22,4 +22,4 @@ jobs:
         with:
           push: true
           context: docker/
-          tags: quay.io/lkirk/${{ matrix.container }}:${{ github.ref_name == 'main' && 'latest' || github.ref_name }}
+          tags: quay.io/lkirk/htcondor-musings:${{ github.ref_name == 'main' && 'latest' || github.ref_name }}
