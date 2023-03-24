@@ -3,7 +3,7 @@ name: docker publish
 on: push
 
 jobs:
-  build-tools-images:
+  build-image:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
