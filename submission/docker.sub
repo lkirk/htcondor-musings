@@ -1,0 +1,15 @@
+universe                = docker
+docker_image            = quay.io/lkirk/htcondor-musings
+
+should_transfer_files   = YES
+when_to_transfer_output = ON_EXIT
+transfer_input_files    = test_data
+transfer_output_files   = output.txt
+arguments               = --input test_data/test.txt --output output.txt
+
+output                  = out.$(Process)
+error                   = err.$(Process)
+log                     = log.$(Process)
+request_memory          = 100M
+request_disk            = 100M
+queue 1
