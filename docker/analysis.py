@@ -13,5 +13,5 @@ arg_parser.add_argument('--input', required=True)
 arg_parser.add_argument('--output', required=True)
 args = arg_parser.parse_args()
 
-with open(args.output) as out_fh:
+with open(args.output, 'w') as out_fh:
     print(np.loadtxt(args.input).mean(1), file=out_fh)
