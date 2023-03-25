@@ -1,6 +1,7 @@
 FROM python:3.11-slim-bullseye
 
 ADD requirements.txt .
+ADD entrypoint.sh .
 
 RUN \
 	set -ex; \
@@ -11,4 +12,4 @@ RUN \
 	pip install -U pip; \
 	pip install -r requirements.txt
 
-CMD ["pwd"]
+ENTRYPOINT ["entrypoint.sh"]
