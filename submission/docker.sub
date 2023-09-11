@@ -1,5 +1,5 @@
 universe                = docker
-docker_image            = ghcr.io/lkirk/htcondor-musings
+docker_image            = ghcr.io/lkirk/htcondor-musings:main
 docker_pull_policy      = always  # this means we always pull from the docker repo
 
 should_transfer_files   = YES
