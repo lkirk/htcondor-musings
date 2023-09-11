@@ -13,4 +13,4 @@ RUN \
 
 ADD analysis.py .
 
-CMD ["/ve/bin/python", "/analysis.py"]
+ENTRYPOINT ["/ve/bin/python", "/analysis.py"]
