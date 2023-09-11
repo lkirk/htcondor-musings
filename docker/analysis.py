@@ -15,3 +15,4 @@ args = arg_parser.parse_args()
 
 with open(args.output, 'w') as out_fh:
     print(np.loadtxt(args.input).mean(1), file=out_fh)
+    print('oh hi folks', file=out_fh)
