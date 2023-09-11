@@ -12,5 +12,7 @@ RUN \
 	ve/bin/pip install -r requirements.txt
 
 ADD analysis.py .
+ADD entrypoint.sh .
 
-CMD ["/ve/bin/python", "/analysis.py"]
+CMD ["/entrypoint.sh"]
+# CMD ["/ve/bin/python", "/analysis.py"]
